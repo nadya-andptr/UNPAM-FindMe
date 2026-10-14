@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UNPAM FindMe!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header dan Navigasi -->
+    <header>
+        <a class="brand" href="index.html">
+         <span>UNPAM FindMe!</span>
+        </a>
+
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="lowongan.html">Lowongan</a>
+            <a href="tentang.html">Tentang Kami</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Header Section -->
+        <section class="header">
+            <p class="eyebrow">
+                UNTUK MAHASISWA &amp; ALUMNI UNPAM SERANG
+            </p>
+
+            <h1>
+                Temukan peluang kerja<br>
+                <span>yang cocok untukmu.</span>
+            </h1>
+
+            <p class="intro">
+                Cari lowongan kerja, magang, dan part-time
+                dalam satu tempat.
+            </p>
+
+            <!-- Form Pencarian Lowongan -->
+            <form id="home-search" class="search">
+                <input
+                    type="text"
+                    id="home-keyword"
+                    aria-label="Kata kunci"
+                    placeholder="Cari pekerjaan yang sesuai dengan kriteriamu di sini!"
+                >
+
+                <button type="submit">Cari Lowongan</button>
+            </form>
+        </section>
+
+        <!-- Kategori Pekerjaan -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Jelajahi bidang</h2>
+                <a href="lowongan.html">Semua lowongan →</a>
+            </div>
+
+            <div class="categories">
+                <a href="lowongan.html?category=Teknologi">
+                    Teknologi
+                </a>
+
+                <a href="lowongan.html?category=Administrasi">
+                    Administrasi
+                </a>
+
+                <a href="lowongan.html?category=Marketing">
+                    Marketing
+                </a>
+
+                <a href="lowongan.html?category=Desain">
+                    Desain
+                </a>
+            </div>
+        </section>
+
+        <!-- Daftar Lowongan Pilihan -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Contoh lowongan</h2>
+                <a href="lowongan.html">Lihat semua →</a>
+            </div>
+
+            <div id="featured-jobs" class="job-grid"></div>
+
+            <p class="note">
+                Data lowongan di website ini hanya contoh, bukan data yang sesungguhnya.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        UNPAM FindMe! · Proyek pembelajaran
+    </footer>
+</body>
+</html>
